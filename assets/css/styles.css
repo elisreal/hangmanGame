@@ -1,5 +1,47 @@
 body.mainBody {
 	background-image: url("../images/bg.jpg");
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: fill;
 }
+
+.container {
+	margin-right: 30%;
+	padding: 20px;
+}
+
+img.logo {
+	width: 300px;
+}
+
+p {
+	font-family: "Work Sans", sans-serif;
+}
+
+.keyboard {
+	font-family: "Work Sans", sans-serif;
+	font-size: 2rem;
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.keys {
+	padding: 5px;
+	background-color: #FFFFFF;
+	float: left;
+	margin: 5px;
+	text-align: center;
+	text-decoration: none;
+}
+
+h1 {
+	font-family: "Work Sans", sans-serif;
+	font-weight: 900;
+	font-size: 2rem;
+}
+
+#letters a{
+	margin-right: auto;
+	margin-left: auto;
+}
+

@@ -6,11 +6,8 @@
 		<!-- googleFonts -->
 		<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
 		<!-- My reset -->
 		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
@@ -26,44 +23,110 @@
 
 
 	<body class="mainBody"> 
+
 		<div class="container">
+				<!-- A centered header image will go here -->
+				<div class="row  container">
+					<div class="col-lg-12  text-center">
+						<img class="logo" src="assets/images/logo.png" alt="logo">
+						</div>
+					</div>
+				</div>
 
-			<div class="opening screen">
+				<!-- Enter name and Continue Btn
 
-				<!-- Centered open card -->
-
-				<!-- Fill out name -->
+				<div class="row container">
+					<div class="col-lg-12 text-center">
+						<input id="userName" class="textBox">
+					</div>
+				</div>
+				<div class="row container">
+					<div class="col-lg-12 text-center">
+						<button class="btn btn-lg btn-success" id="continue">continue</button>
+					</div>
+				</div>
+				-->
 				
-				<!-- Continue (will hide open card and reveal the game) -->
-
-			</div>
-
-
-				<!-- Play the intro -->
-
 			<div class="play area">
 
-				<!-- A centered header image will go here -->
-
-				<!-- Videos or gifs will load here -->
-
-						<!-- Prison Mike comes out when you lose -->
-
-						<!-- The end of the Commercial where they're waving -->
+				<!-- Score Here -->
+				<div class="scoreArea">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="chances left">
+								<span id="lives">4</span> 
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="wins"></div>
+						</div>
+						<div class="col-sm-4">
+							<div class="losses"></div>
+						</div>
+					</div>
+				</div>
 
 				<!-- Question or Clue -->
+				<div class="row container">
+					<div class="col-lg-12 text-center">
+						<p>Use the alphabet below to guess the word, or click hint to get a clue. </p>
+						<p>There are <span id="numLetters">0</span> letters in this phrase.</p>
+						<h1 id="WORD">_______</h1>
+					</div> 
+				</div>
 
-				<!-- Score Here -->
+          		<!-- Dwight's Bobblehead (split into 4 segments representing the 4 misses you are allowed.) -->
+				
+				<div class="row">
+					<div id="bobblehead-sprite"></div>
+				</div>
 
-					<!-- Losses and Wins -->
 
-				<!-- How Many Guesses left -->
+				<!-- Keyboard Here -->
+				<div class="row container">
+					<div class="col-lg-12 text-center">
+						<div class="keyboard text-center">
+							<div id="letters text-center">
+	                			<a class="keys" id="a">A</a>
+	                			<a class="keys" id="b">B</a>
+	                			<a class="keys" id="c">C</a>
+	                			<a class="keys" id="d">D</a>
+	                			<a class="keys" id="e">E</a>
+	                			<a class="keys" id="f">F</a>
+	                			<a class="keys" id="g">G</a>
+	                			<a class="keys" id="h">H</a>
+	                			<a class="keys" id="i">I</a>
+	                			<a class="keys" id="j">J</a>
+	                			<a class="keys" id="k">K</a>
+	                			<a class="keys" id="l">L</a>
+	                			<a class="keys" id="m">M</a>
+	                		</div>
+	                		<div id="letters text-center">
+	                			<a class="keys" id="n">N</a>
+	                			<a class="keys" id="o">O</a>
+	                			<a class="keys" id="p">P</a>
+	                			<a class="keys" id="q">Q</a>
+	                			<a class="keys" id="r">R</a>
+	                			<a class="keys" id="s">S</a>
+	                			<a class="keys" id="t">T</a>
+	                			<a class="keys" id="u">U</a>
+	                			<a class="keys" id="v">V</a>
+	                			<a class="keys" id="w">W</a>
+	                			<a class="keys" id="x">X</a>
+	                			<a class="keys" id="y">Y</a>
+	                			<a class="keys" id="z">Z</a>
+	        				</div>
+						</div>
+					</div>
+				</div>
 
-				<!-- The play area (where the letters selected will appear) -->
+				<!-- Play Again Button -->
+				<div class="row container">
+					<div class="col-lg-12 text-center">
+            			<button class="btn btn-lg btn-success" id="play-again">Play again?</button>
+            		</div>
+          		</div>
 
-				<!-- Dwight's Bobblehead (split into 4 segments representing the 4 misses you are allowed.) -->
-
-				<!-- The control area (where user will select the letters) -->
 
 				<!-- Footer will go here -->
 
@@ -72,14 +135,12 @@
 			<!-- Office Phrases -->
 
 				<!-- I am beyonce, always -->
-				<!-- Occasionally I'll Hit a person with my car -->
+				<!-- Serenity by Jan -->
 				<!-- Would an idiot do that? -->
-				<!-- Sittin' on your biscuit, never having to risk it. -->
-				<!-- What color mustard is his shirt? Yellow or Dijon? -->
-				<!-- And there's our smudgeness. -->
-				<!-- I don't wanna be married in a tent like a hobo -->
-				<!-- You just can't come into my nook and call me stupid -->
+				<!-- Bears, Beets, Battlestar Galactica -->
 				<!-- That's what she said -->
+				<!-- Shoe-la-la -->
+
 
 
 
@@ -87,9 +148,23 @@
 
 
 		</div>
-	<!-- jQuery links here -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- javascript links go here -->
-    <script src="js/bootstrap.min.js"></script>
+	
+
+
+	<!-- Bootstrap and jQuery CDN -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+    <!-- My JS -->
+	<script type="text/javascript" src="assets/js/words.js"></script>
+	<script type="text/javascript" src="assets/js/script.js"></script>
+	<script type="text/javascript" src="assets/js/clickLetter.js"></script>
+
+
+
+
 	</body>
 </html>
