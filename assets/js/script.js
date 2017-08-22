@@ -31,11 +31,12 @@ main.updateLetter = function(letter) {
     main.changes = 0;
     for (i = 0; i < main.word.length; i++){
         main.wordArray[i] = main.word.charAt(i);
-        if (main.word.charAt(i) == letter); {
+        if (main.word.charAt(i).toUpperCase() == letter.toUpperCase()) {
             main.wordUArray[i] = letter;
             main.changes += 1;
         }
     }
+    
     if (main.changes < 1) {
         main.lives -= 1;
         document.getElementById ("lives").innerHTML = main.lives;
@@ -60,4 +61,5 @@ main.updateLetter = function(letter) {
 
 main.pullWord();
 main.setUnderline();
+main.updateLetter(" ");
 
