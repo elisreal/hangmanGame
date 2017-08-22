@@ -10,6 +10,7 @@ main.word = "";
 main.wordU = "";
 
 var music = document.getElementById("myAudio");
+main.score = 0;
 
 
 // Functions
@@ -50,12 +51,11 @@ main.updateLetter = function(letter) {
     main.word2 = main.wordUArray.join("");
 
     if(main.word1.toLowerCase() == main.word2.toLowerCase()){
-        document.getElementById("myAudio");
-        function playAudio() { 
-            music.play(); 
-        }
+        music.play(); 
         alert("You Win! Loading a new word.");
         window.location.reload();
+        main.score += 1;
+        document.getElementById ("score").innerHTML = main.score;
     }
 
     if(main.lives < 1) {
