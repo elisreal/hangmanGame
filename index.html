@@ -18,6 +18,13 @@
 		<!-- Viewport -->
 		<meta name="viewport" content="width=device-width, initial-scale = 1">
 
+		<!-- The Office Theme Music -->
+		<audio id="myAudio">
+  		<source src="assets/sounds/TheOffice.mp3" type="audio/mpeg">
+
+  Your browser does not support the audio element.
+</audio>
+
 		<title>The Office: The Game</title>
 	</head>
 
@@ -26,26 +33,14 @@
 
 		<div class="container">
 				<!-- A centered header image will go here -->
-				<div class="row  container">
-					<div class="col-lg-12  text-center">
+				<div class="row container">
+					<div class="col-lg-12 text-center">
 						<img class="logo" src="assets/images/logo.png" alt="logo">
 						</div>
 					</div>
 				</div>
 				
 			<div class="play area">
-
-				<!-- Lives Here -->
-				<div class="scoreArea">
-					<div class="row container">
-						<div class="col-lg-12 text-center">
-							<div class="chances left">
-								<h2 class="numbers"><span id="lives">4</span></h2>
-								<h2>LIVES LEFT</h2> 
-							</div>
-						</div>
-					</div>
-				</div>
 
 				<!-- Question or Clue -->
 				<div class="row container">
@@ -65,8 +60,8 @@
 
 				<!-- Keyboard Here -->
 				<div class="row container">
-					<div class="col-lg-12 keyboard">
-						<div id="letters text-center">
+					<div class="col-lg-12 keyboard text-center">
+						<div id="letters">
 	                		<a class="keys" id="a">A</a>
 	                		<a class="keys" id="b">B</a>
                 			<a class="keys" id="c">C</a>
@@ -81,7 +76,7 @@
                 			<a class="keys" id="l">L</a>
                 			<a class="keys" id="m">M</a>
                 		</div>
-                		<div id="letters text-center">
+                		<div id="letters">
                 			<a class="keys" id="n">N</a>
                 			<a class="keys" id="o">O</a>
                 			<a class="keys" id="p">P</a>
@@ -96,6 +91,18 @@
                 			<a class="keys" id="y">Y</a>
                 			<a class="keys" id="z">Z</a>
         				</div>
+					</div>
+				</div>
+
+				<!-- Lives Here -->
+				<div class="scoreArea">
+					<div class="row container">
+						<div class="col-lg-12 text-center">
+							<div class="chances left">
+								<h2 class="numbers"><span id="lives">6</span></h2>
+								<h2>LIVES LEFT</h2> 
+							</div>
+						</div>
 					</div>
 				</div>
 
