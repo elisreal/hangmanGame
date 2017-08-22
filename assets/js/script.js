@@ -9,13 +9,17 @@ main.numInWordBank = words.length;
 main.word = "";
 main.wordU = "";
 
+main.score = 0;
+
 music = document.getElementById("myAudio");
 
 
 // Functions
 
 main.pullWord = function () {
+    console.log('was here');
     main.word = words.list [(Math.floor(Math.random()*main.numInWordBank))];
+    console.log(main.word);
 }
 
 main.setUnderline = function() {
@@ -25,7 +29,7 @@ main.setUnderline = function() {
         main.wordUArray[i] = "_";
     }
     main.wordU = main.wordUArray.join("");
-    document.getElementById("WORD").innerHTML = main.wordU;
+    document.getElementById("wordHere").innerHTML = main.wordU;
     document.getElementById("numLetters").innerHTML = main.word.length;
 }
 
@@ -36,6 +40,7 @@ main.updateLetter = function(letter) {
         if (main.word.charAt(i).toUpperCase() == letter.toUpperCase()) {
             main.wordUArray[i] = letter;
             main.changes += 1;
+
         }
     }
 
@@ -44,25 +49,32 @@ main.updateLetter = function(letter) {
         document.getElementById ("lives").innerHTML = main.lives;
     }
     main.wordU = main.wordUArray.join("");
-    document.getElementById("WORD").innerHTML = main.wordU;
+    document.getElementById("wordHere").innerHTML = main.wordU;
 
     main.word1 = main.wordArray.join("");
     main.word2 = main.wordUArray.join("");
 
     if(main.word1.toLowerCase() == main.word2.toLowerCase()){
-        alert("You Win! Loading a new word.");
-        window.location.reload();
         music.play()
+        alert("You Win! Loading a new word.");
+        main.pullWord()
+    }
+    if(main.word1.toLowerCase() == main.word2.toLowerCase()){
+        main.score += 1,
+        document.getElementById ("score").innerHTML = main.score;
     }
 
     if(main.lives < 1) {
-        document.getElementById("WORD").innerHTML = main.word1;
+        document.getElementById("wordHere").innerHTML = main.word1;
         alert("You have run out of chances!! You lose!");
         window.location.reload();
     }
 }
 
+
 main.pullWord();
 main.setUnderline();
 main.updateLetter(" ");
+main.hideButton();
+console.log(main.updateLetter);
 
