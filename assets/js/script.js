@@ -9,8 +9,7 @@ main.numInWordBank = words.length;
 main.word = "";
 main.wordU = "";
 
-var music = document.getElementById("myAudio");
-main.score = 0;
+music = document.getElementById("myAudio");
 
 
 // Functions
@@ -51,11 +50,9 @@ main.updateLetter = function(letter) {
     main.word2 = main.wordUArray.join("");
 
     if(main.word1.toLowerCase() == main.word2.toLowerCase()){
-        music.play(); 
         alert("You Win! Loading a new word.");
         window.location.reload();
-        main.score += 1;
-        document.getElementById ("score").innerHTML = main.score;
+        music.play()
     }
 
     if(main.lives < 1) {
