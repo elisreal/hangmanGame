@@ -32,36 +32,17 @@
 						</div>
 					</div>
 				</div>
-
-				<!-- Enter name and Continue Btn
-
-				<div class="row container">
-					<div class="col-lg-12 text-center">
-						<input id="userName" class="textBox">
-					</div>
-				</div>
-				<div class="row container">
-					<div class="col-lg-12 text-center">
-						<button class="btn btn-lg btn-success" id="continue">continue</button>
-					</div>
-				</div>
-				-->
 				
 			<div class="play area">
 
-				<!-- Score Here -->
+				<!-- Lives Here -->
 				<div class="scoreArea">
-					<div class="row">
-						<div class="col-sm-4">
+					<div class="row container">
+						<div class="col-lg-12 text-center">
 							<div class="chances left">
-								<span id="lives">4</span> 
+								<h2 class="numbers"><span id="lives">4</span></h2>
+								<h2>LIVES LEFT</h2> 
 							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="wins"></div>
-						</div>
-						<div class="col-sm-4">
-							<div class="losses"></div>
 						</div>
 					</div>
 				</div>
@@ -69,8 +50,8 @@
 				<!-- Question or Clue -->
 				<div class="row container">
 					<div class="col-lg-12 text-center">
-						<p>Use the alphabet below to guess the word, or click hint to get a clue. </p>
-						<p>There are <span id="numLetters">0</span> letters in this phrase.</p>
+						<p>Use the alphabet below to guess the phrase. </p>
+						<h2>There are <span id="numLetters"><strong>0</strong></span> letters in this phrase.</h2>
 						<h1 id="WORD">_______</h1>
 					</div> 
 				</div>
@@ -84,69 +65,47 @@
 
 				<!-- Keyboard Here -->
 				<div class="row container">
-					<div class="col-lg-12 text-center">
-						<div class="keyboard text-center">
-							<div id="letters text-center">
-	                			<a class="keys" id="a">A</a>
-	                			<a class="keys" id="b">B</a>
-	                			<a class="keys" id="c">C</a>
-	                			<a class="keys" id="d">D</a>
-	                			<a class="keys" id="e">E</a>
-	                			<a class="keys" id="f">F</a>
-	                			<a class="keys" id="g">G</a>
-	                			<a class="keys" id="h">H</a>
-	                			<a class="keys" id="i">I</a>
-	                			<a class="keys" id="j">J</a>
-	                			<a class="keys" id="k">K</a>
-	                			<a class="keys" id="l">L</a>
-	                			<a class="keys" id="m">M</a>
-	                		</div>
-	                		<div id="letters text-center">
-	                			<a class="keys" id="n">N</a>
-	                			<a class="keys" id="o">O</a>
-	                			<a class="keys" id="p">P</a>
-	                			<a class="keys" id="q">Q</a>
-	                			<a class="keys" id="r">R</a>
-	                			<a class="keys" id="s">S</a>
-	                			<a class="keys" id="t">T</a>
-	                			<a class="keys" id="u">U</a>
-	                			<a class="keys" id="v">V</a>
-	                			<a class="keys" id="w">W</a>
-	                			<a class="keys" id="x">X</a>
-	                			<a class="keys" id="y">Y</a>
-	                			<a class="keys" id="z">Z</a>
-	        				</div>
-						</div>
+					<div class="col-lg-12 keyboard">
+						<div id="letters text-center">
+	                		<a class="keys" id="a">A</a>
+	                		<a class="keys" id="b">B</a>
+                			<a class="keys" id="c">C</a>
+                			<a class="keys" id="d">D</a>
+                			<a class="keys" id="e">E</a>
+                			<a class="keys" id="f">F</a>
+                			<a class="keys" id="g">G</a>
+                			<a class="keys" id="h">H</a>
+                			<a class="keys" id="i">I</a>
+                			<a class="keys" id="j">J</a>
+                			<a class="keys" id="k">K</a>
+                			<a class="keys" id="l">L</a>
+                			<a class="keys" id="m">M</a>
+                		</div>
+                		<div id="letters text-center">
+                			<a class="keys" id="n">N</a>
+                			<a class="keys" id="o">O</a>
+                			<a class="keys" id="p">P</a>
+                			<a class="keys" id="q">Q</a>
+                			<a class="keys" id="r">R</a>
+                			<a class="keys" id="s">S</a>
+                			<a class="keys" id="t">T</a>
+                			<a class="keys" id="u">U</a>
+                			<a class="keys" id="v">V</a>
+                			<a class="keys" id="w">W</a>
+                			<a class="keys" id="x">X</a>
+                			<a class="keys" id="y">Y</a>
+                			<a class="keys" id="z">Z</a>
+        				</div>
 					</div>
 				</div>
 
 				<!-- Play Again Button -->
 				<div class="row container">
 					<div class="col-lg-12 text-center">
-            			<button class="btn btn-lg btn-success" id="play-again">Play again?</button>
+            			<button class="btn btn-lg btn-success" id="play-again" onClick="window.location.reload()">Play again?</button>
             		</div>
           		</div>
-
-
-				<!-- Footer will go here -->
-
 			</div>
-
-			<!-- Office Phrases -->
-
-				<!-- I am beyonce, always -->
-				<!-- Serenity by Jan -->
-				<!-- Would an idiot do that? -->
-				<!-- Bears, Beets, Battlestar Galactica -->
-				<!-- That's what she said -->
-				<!-- Shoe-la-la -->
-
-
-
-
-
-
-
 		</div>
 	
 
@@ -162,9 +121,6 @@
 	<script type="text/javascript" src="assets/js/words.js"></script>
 	<script type="text/javascript" src="assets/js/script.js"></script>
 	<script type="text/javascript" src="assets/js/clickLetter.js"></script>
-
-
-
 
 	</body>
 </html>

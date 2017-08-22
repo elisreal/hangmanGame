@@ -6,7 +6,7 @@ main.wordUArray = [];
 main.lives = 4;
 main.numInWordBank = words.length;
 
-main.word = "test";
+main.word = "";
 main.wordU = "";
 
 
@@ -36,7 +36,7 @@ main.updateLetter = function(letter) {
             main.changes += 1;
         }
     }
-    
+
     if (main.changes < 1) {
         main.lives -= 1;
         document.getElementById ("lives").innerHTML = main.lives;
@@ -47,7 +47,7 @@ main.updateLetter = function(letter) {
     main.word1 = main.wordArray.join("");
     main.word2 = main.wordUArray.join("");
 
-    if(main.word1 == main.word2){
+    if(main.word1.toLowerCase() == main.word2.toLowerCase()){
         alert("You Win! Loading a new word.");
         window.location.reload();
     }

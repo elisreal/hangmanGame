@@ -15,14 +15,16 @@ img.logo {
 
 p {
 	font-family: "Work Sans", sans-serif;
+	padding-bottom: 20px;
 }
 
 .keyboard {
 	font-family: "Work Sans", sans-serif;
 	font-size: 2rem;
 	text-align: center;
-	width: 50%;
+	width: 100%;
 	margin: 0 auto;
+	padding: 0 20%;
 }
 
 .keys {
@@ -34,10 +36,29 @@ p {
 	text-decoration: none;
 }
 
+a.keys:hover {
+	background-color: #C0C0C0;
+	color: #696969;
+}
+
 h1 {
 	font-family: "Work Sans", sans-serif;
 	font-weight: 900;
 	font-size: 2rem;
+}
+
+h1#WORD {
+	letter-spacing: 3px;
+	padding-top: 20px;
+}
+
+h2 {
+	font-family: "Work Sans", sans-serif;
+	font-size: 1.5rem;
+}
+
+span#lives, #numLetters {
+	font-weight: bolder;
 }
 
 #letters a{
