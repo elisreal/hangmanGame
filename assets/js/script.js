@@ -40,7 +40,6 @@ main.updateLetter = function(letter) {
         if (main.word.charAt(i).toUpperCase() == letter.toUpperCase()) {
             main.wordUArray[i] = letter;
             main.changes += 1;
-
         }
     }
 
@@ -59,9 +58,10 @@ main.updateLetter = function(letter) {
         alert("You Win! Loading a new word.");
         main.pullWord()
     }
+
     if(main.word1.toLowerCase() == main.word2.toLowerCase()){
-        main.score += 1,
-        document.getElementById ("score").innerHTML = main.score;
+        main.score += 1;
+        document.getElementById("score").innerHTML = main.score;
     }
 
     if(main.lives < 1) {
@@ -75,6 +75,5 @@ main.updateLetter = function(letter) {
 main.pullWord();
 main.setUnderline();
 main.updateLetter(" ");
-main.hideButton();
 console.log(main.updateLetter);
 
