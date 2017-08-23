@@ -207,13 +207,3 @@ $(function(){
 	}
 );
 
-
-//main.hideButton = function() {
-//   var hide = document.getElementById("letter");
-//    if (hide.style.display === 'none') {
-//        hide.style.display = 'block';
-//    }
-//  else {
-//        hide.style.display = 'none';
-//    }
-//}

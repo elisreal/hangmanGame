@@ -72,6 +72,7 @@ main.updateLetter = function(letter) {
 }
 
 
+
 main.pullWord();
 main.setUnderline();
 main.updateLetter(" ");

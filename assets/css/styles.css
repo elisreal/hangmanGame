@@ -69,7 +69,7 @@ h2 {
 	font-size: 1.5rem;
 }
 
-span#lives, #numLetters {
+span#lives, #numLetters, #score {
 	font-weight: bolder;
 }
 
