@@ -30,29 +30,35 @@ $("#start").click(function() {
 });
 
 main.pullWord = function () {
-    console.log('was here');
+    console.log();
     main.word = words.list [(Math.floor(Math.random()*main.numInWordBank))];
     console.log(main.word);
 }
 
 main.setUnderline = function() {
+    console.log();
     main.pullWord();
     for (i = 0; i < main.word.length; i++) {
         main.wordArray[i] = main.word.charAt (i);
         main.wordUArray[i] = "_";
+        console.log();
     }
     main.wordU = main.wordUArray.join("");
+    console.log();
     document.getElementById("wordHere").innerHTML = main.wordU;
     document.getElementById("numLetters").innerHTML = main.word.length;
+    console.log();
 }
 
 main.updateLetter = function(letter) {
+    console.log();
     main.changes = 0;
     for (i = 0; i < main.word.length; i++){
         main.wordArray[i] = main.word.charAt(i);
         if (main.word.charAt(i).toUpperCase() == letter.toUpperCase()) {
             main.wordUArray[i] = letter;
             main.changes += 1;
+
         }
     }
 
@@ -68,7 +74,7 @@ main.updateLetter = function(letter) {
 
     if(main.word1.toLowerCase() == main.word2.toLowerCase()){
         music.play()
-        alert("You Win! Loading a new word.");
+        alert("You Win! Click the button below to load a new phrase.");
         main.pullWord()
     }
 
@@ -83,6 +89,7 @@ main.updateLetter = function(letter) {
         window.location.reload();
     }
 }
+
 
 
 
