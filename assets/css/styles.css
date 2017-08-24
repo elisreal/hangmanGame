@@ -13,7 +13,7 @@ body.mainBody {
 button#start {
 	background: transparent;
 	border-style: none;
-	margin-top:20%;
+	padding-top: 20%;
 }
 
 .startButton {
