@@ -38,6 +38,7 @@ $(function(){
 		});
 	}
 );
+
 $(function(){
 	$("#f").click(function(event){
 		event.preventDefault();
@@ -150,6 +151,9 @@ $(function(){
 		});
 	}
 );
+$("#play-again").click(function(){
+    $("#s").show();
+});
 $(function(){
 	$("#t").click(function(event){
 		event.preventDefault();
@@ -206,4 +210,9 @@ $(function(){
 		});
 	}
 );
+
+$("#play-again").click(function(){
+    $(".keys").show();
+});
+
 

@@ -10,13 +10,31 @@ body.mainBody {
 	padding: 20px;
 }
 
+button#start {
+	background: transparent;
+	border-style: none;
+	margin-top:20%;
+}
+
+.startButton {
+	width: 600px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clickPlay {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
 img.logo {
 	width: 300px;
 }
 
 p {
 	font-family: "Work Sans", sans-serif;
-	padding-bottom: 20px;
+	line-height: 1.5;
 }
 
 .keyboard {

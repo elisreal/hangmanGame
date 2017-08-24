@@ -15,6 +15,19 @@ music = document.getElementById("myAudio");
 
 
 // Functions
+$(function () {
+     $("#header").hide();
+     $("#playArea").hide();
+     music.play()
+ });
+
+
+$("#start").click(function() {
+    $("#openScreen").hide();
+    $("#header").show();
+    $("#playArea").show();
+    music.pause()
+});
 
 main.pullWord = function () {
     console.log('was here');
