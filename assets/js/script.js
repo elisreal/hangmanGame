@@ -29,6 +29,8 @@ $("#start").click(function() {
     music.pause()
 });
 
+
+
 main.pullWord = function () {
     console.log();
     main.word = words.list [(Math.floor(Math.random()*main.numInWordBank))];
@@ -49,6 +51,7 @@ main.setUnderline = function() {
     document.getElementById("numLetters").innerHTML = main.word.length;
     console.log();
 }
+
 
 main.updateLetter = function(letter) {
     console.log();
@@ -90,7 +93,9 @@ main.updateLetter = function(letter) {
     }
 }
 
-
+clearWord = function() {
+    document.getElementById("wordHere").innerHTML = " ";
+}
 
 
 main.pullWord();
