@@ -93,7 +93,7 @@ main.updateLetter = function(letter) {
     }
 }
 
-clearWord = function() {
+function clearWord() {
     document.getElementById("wordHere").innerHTML = " ";
 }
 
